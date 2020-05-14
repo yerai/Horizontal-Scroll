@@ -1,8 +1,13 @@
 $(document).ready(function() {
-	$('section').mousewheel(function(e, delta) {
+
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	if (!isMobile) {
+	  $('section').mousewheel(function(e, delta) {
 		this.scrollLeft -= (delta);
 		e.preventDefault();
-	});
+		});
+	}
+
 });
 
 // init controller
