@@ -37,17 +37,36 @@ $(document).ready(function() {
 						.addTo(controller);
 
 
-	var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"Apple Music <br> Redesign"});
+	var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"Apple Music<br>Redesign"});
 	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
 						.setTween(tween)
 						.addTo(controller);
-
 	var tween = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"UX/UI"});
 	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
 						.setTween(tween)
 						.addTo(controller);
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0.5})
+	var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"SafeLand"});
+	var scene = new ScrollMagic.Scene({triggerElement: "#item2", duration: "50%", triggerHook:0.5})
+						.setTween(tween)
+						.addTo(controller);
+	var tween = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"UX/UI"});
+	var scene = new ScrollMagic.Scene({triggerElement: "#item2", duration: "50%", triggerHook:0.5})
+						.setTween(tween)
+						.addTo(controller);
+	
+	var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"Treasure<br>Island"});
+	var scene = new ScrollMagic.Scene({triggerElement: "#item3", duration: "50%", triggerHook:0.5})
+						.setTween(tween)
+						.addTo(controller);
+	var tween = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"3D Modelling"});
+	var scene = new ScrollMagic.Scene({triggerElement: "#item3", duration: "50%", triggerHook:0.5})
+						.setTween(tween)
+						.addTo(controller);
+
+	
+
+	/*var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0.5})
 					.on("enter", function () {
 						animateElem2.innerHTML = "";
 					})
@@ -74,6 +93,7 @@ $(document).ready(function() {
 						animateElem.innerHTML = "Low-Poly<br>Treasure Island";
 						animateElem3.innerHTML = "3D Modelling"
 					})
-					.addTo(controller);
+					.addTo(controller);*/
+
 
 });
