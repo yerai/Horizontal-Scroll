@@ -85,11 +85,11 @@ $(document).ready(function() {
 			var myScroll = new IScroll('#container',
 						{
 							// don't scroll horizontal
-							scrollX: false,
+							scrollX: true,
 							// but do scroll vertical
-							scrollY: true,
+							scrollY: false,
 							// show scrollbars
-							scrollbars: true,
+							scrollbars: false,
 							// deactivating -webkit-transform because pin wouldn't work because of a webkit bug: https://code.google.com/p/chromium/issues/detail?id=20574
 							// if you dont use pinning, keep "useTransform" set to true, as it is far better in terms of performance.
 							useTransform: false,
@@ -105,7 +105,7 @@ $(document).ready(function() {
 			
 			// overwrite scroll position calculation to use child's offset instead of container's scrollTop();
 			controller.scrollPos(function () {
-				return -myScroll.y;
+				return -myScroll.x;
 			});
 
 			// thanks to iScroll 5 we now have a real onScroll event (with some performance drawbacks)
@@ -116,7 +116,8 @@ $(document).ready(function() {
 			// add indicators to scrollcontent so they will be moved with it.
 			scene.addIndicators({parent: ".scrollContent"});
 		} else {
-			// add indicators (requires plugin)				
+			// add indicators (requires plugin)
+							
 		}
 
 });
