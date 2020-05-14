@@ -7,15 +7,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		});
 	}else{
-		$('section').draggable({
-		   axis: "x",
-		   drag: function(event, ui){
-		      var position = ui.position;
-		      var offset = ui.offset;
-		      //code returns false if your check does not go through
-		      //your code to check if the user can drag anymore
-		   }
-		});
+		document.getElementById("container").style.overflowX = "visible";
 	}
 
 });
