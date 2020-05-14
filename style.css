@@ -1,0 +1,149 @@
+html, body, *{
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: #3D3E40;
+   
+}
+
+:root {
+  --animate-duration: 0.5s;
+}
+
+.flex-container {
+	overflow-x: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: #F3F7FE;
+
+}
+
+.item{
+	flex: 1 0 auto;
+	height: 65%;
+	margin-right: 20%; 
+	width: 50%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 13%;
+	margin-top: 17%;
+}
+
+.last{
+	margin-right: 23vw;
+}
+
+.about-me{
+	flex: 1 0 auto;
+	height: 65%;
+	margin-right: 15vw; 
+	width: 30vw;
+	margin-bottom: 13%;
+	margin-top: 17%;
+	display: inline-flex; 
+	flex-direction: column;
+}
+
+.name{
+	font-family: 'Abril Fatface';
+	font-size: 15vh;
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+  	height: 20vh;
+}
+
+.text{
+	font-family: 'Raleway';
+	font-size: 1.5vw;
+	text-align: left;
+	height: 30vh;
+}
+
+.social{
+	height: 15vh; 
+	display: inline-flex; 
+	flex-direction: row;
+}
+
+.link{
+	font-family: 'Raleway';
+	font-size: 1.5vw;
+	text-align: left;
+	margin-right: 2vw;
+	text-decoration: none;
+}
+
+.my-photo{
+	flex: 1 0 auto;
+	width: 50vw;
+	height: auto;
+	margin-top: 10vh;
+}
+
+.title{
+	position: absolute;
+	left: 10vh;
+	top:0;
+	font-size: 16vh;
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+  	font-family: 'Abril Fatface';
+  	opacity: 0;
+}
+
+.project-title{
+	position: absolute;
+	top: 30%;
+    left: 15%;
+	font-size: 7vh;
+	line-height: 7vh;
+	font-family: 'Abril Fatface', cursive;
+	text-align: right;
+	transition: color 1s ease;
+	/*color: #3D3E40;*/
+	color: white;
+	mix-blend-mode: difference;
+	height: 15vh;
+	opacity: 0;
+
+}
+
+.project-number{
+	position: absolute;
+	bottom: 5%;
+    right:25%;
+	font-size: 30vh;
+	line-height:30vh;
+	font-family: 'Abril Fatface', cursive;
+	text-align: right;
+	transition: color 1s ease;
+	color: #3D3E40;
+	height: 30vh;
+	color: white;
+	mix-blend-mode: difference;
+
+}
+.project-type{
+	position: absolute;
+	top: 85%;
+    left: 23%;
+	font-size: 3vh;
+	line-height: 3vh;
+	height: 3.5vh;
+	font-family: 'Abril Fatface', cursive;
+	text-align: right;
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+	float: left;
+	color: white;
+	mix-blend-mode: difference;
+	opacity: 0;
+}
