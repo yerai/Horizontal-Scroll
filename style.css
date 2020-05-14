@@ -10,8 +10,6 @@ html, body, *{
 }
 
 .flex-container {
-	overflow-x: auto;
-	overflow-y: hidden;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;

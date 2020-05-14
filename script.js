@@ -7,7 +7,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		});
 	}else{
-		document.getElementById("container").style.overflowX = "scroll";
+		//document.getElementById("container").style.overflowX = "scroll";
 	}
 
 });
