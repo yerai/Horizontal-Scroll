@@ -22,7 +22,6 @@ html, body, *{
 	height: 100%;
 	width: 100%;
 	background-color: #F3F7FE;
-
 }
 
 .item{
@@ -50,6 +49,7 @@ html, body, *{
 	margin-top: 17%;
 	display: inline-flex; 
 	flex-direction: column;
+	height: auto;
 }
 
 .name{
@@ -58,18 +58,19 @@ html, body, *{
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
   	-webkit-text-stroke-color: black;
-  	height: 20vh;
+  	height: auto;
 }
 
 .text{
 	font-family: 'Raleway';
 	font-size: 1.5vw;
 	text-align: left;
-	height: 30vh;
+	height: auto;
 }
 
 .social{
-	height: 15vh; 
+	margin-top: 5vh;
+	height: auto;
 	display: inline-flex; 
 	flex-direction: row;
 }
@@ -99,23 +100,22 @@ html, body, *{
   	-webkit-text-stroke-color: black;
   	font-family: 'Abril Fatface';
   	opacity: 0;
+  	height: auto;
 }
 
 .project-title{
 	position: absolute;
+	line-height: 9vh;
 	top: 30%;
     left: 15%;
 	font-size: 7vh;
-	line-height: 7vh;
 	font-family: 'Abril Fatface', cursive;
 	text-align: right;
-	transition: color 1s ease;
-	/*color: #3D3E40;*/
 	color: white;
 	mix-blend-mode: difference;
-	height: 15vh;
+	height: auto;
 	opacity: 0;
-
+	z-index: 10;
 }
 
 .project-number{
@@ -123,14 +123,12 @@ html, body, *{
 	bottom: 5%;
     right:25%;
 	font-size: 30vh;
-	line-height:30vh;
 	font-family: 'Abril Fatface', cursive;
 	text-align: right;
-	transition: color 1s ease;
-	color: #3D3E40;
-	height: 30vh;
+	height: auto;
 	color: white;
 	mix-blend-mode: difference;
+	z-index: 10;
 
 }
 .project-type{
@@ -138,8 +136,6 @@ html, body, *{
 	top: 85%;
     left: 23%;
 	font-size: 3vh;
-	line-height: 3vh;
-	height: 3.5vh;
 	font-family: 'Abril Fatface', cursive;
 	text-align: right;
 	transform: rotate(-90deg);
@@ -148,4 +144,6 @@ html, body, *{
 	color: white;
 	mix-blend-mode: difference;
 	opacity: 0;
+	height: auto;
+	z-index: 10;
 }
