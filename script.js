@@ -12,6 +12,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
+	var isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
 	// init controller
 	var controller = new ScrollMagic.Controller({vertical: false});
 
@@ -21,30 +22,53 @@ $(document).ready(function() {
 	var animateElem2 = document.getElementById("project-number");
 	var animateElem3 = document.getElementById("project-type");
 
-	var tween = TweenMax.to("#item0", 0.5, {alpha:0});
-	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%"})
+	if (isMobile) {
+		var tween = TweenMax.to("#item0", 0.5, {alpha:0});
+		var scene = new ScrollMagic.Scene({riggerElement: "#item0",duration: "50%", triggerHook: 0})
+    					.setTween(tween)
+    					.addTo(controller);
+
+    	var tween = TweenMax.to("#title", 0.5, {alpha:1});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item1", duration: "50%", triggerHook:0.5})
 						.setTween(tween)
 						.addTo(controller);
 
-	var tween = TweenMax.to("#me", 0.5, {alpha:0});
-	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%"})
+		var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"Apple Music<br>Redesign"});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item1", duration: "50%", triggerHook:0.5})
+						.setTween(tween)
+						.addTo(controller);
+		var tween = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"UX/UI"});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item1", duration: "50%", triggerHook:0.5})
 						.setTween(tween)
 						.addTo(controller);
 
-	var tween = TweenMax.to("#title", 0.5, {alpha:1});
-	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
+	}else{
+		var tween = TweenMax.to("#me", 0.5, {alpha:0});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%"})
+						.setTween(tween)
+						.addTo(controller);
+		
+		var tween = TweenMax.to("#item0", 0.5, {alpha:0});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%"})
 						.setTween(tween)
 						.addTo(controller);
 
+		var tween = TweenMax.to("#title", 0.5, {alpha:1});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
+						.setTween(tween)
+						.addTo(controller);
 
-	var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"Apple Music<br>Redesign"});
-	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
+		var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"Apple Music<br>Redesign"});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
 						.setTween(tween)
 						.addTo(controller);
-	var tween = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"UX/UI"});
-	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
+		var tween = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"UX/UI"});
+		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
 						.setTween(tween)
 						.addTo(controller);
+	}
+
+	
 
 	var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"SafeLand"});
 	var scene = new ScrollMagic.Scene({triggerElement: "#item2", duration: "50%", triggerHook:0.5})

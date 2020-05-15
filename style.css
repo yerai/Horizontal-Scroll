@@ -154,9 +154,9 @@ html, body, *{
   .title{left:5vh;font-size:10vh;}
   .project-title{line-height: 7vh;left:5vw;font-size: 5vh;}
   .project-type{left:12%;}
-  .about-me{margin-left: 10vw;width: 60vw;}
+  .about-me{margin-left: 10vw;width: 70vw; margin-right: 10vw;}
   .name{font-size:10vh;}
-  .text{font-size: 2vw;}
-  .link{font-size:3.5vw;}
+  .text{font-size: 4vw;}
+  .link{font-size: 4vw;}
   .my-photo{width: 0;}
 }
