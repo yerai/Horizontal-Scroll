@@ -152,11 +152,12 @@ html, body, *{
 
 @media only screen and (max-width: 600px) {
   .title{left:5vh;font-size:10vh;}
-  .project-title{line-height: 7vh;left:5vw;font-size: 5vh;}
+  .project-title{line-height: 6.5vh;left:5vw;font-size: 5vh; top:20vh;}
   .project-type{left:12%;}
   .about-me{margin-left: 10vw;width: 70vw; margin-right: 10vw;}
   .name{font-size:10vh;}
   .text{font-size: 4vw;}
   .link{font-size: 4vw;}
   .my-photo{width: 0;}
+  .project-number{bottom: 0;right: 10vw;font-size: 20vh;}
 }

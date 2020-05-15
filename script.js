@@ -24,9 +24,9 @@ $(document).ready(function() {
 
 	if (isMobile) {
 		var tween = TweenMax.to("#item0", 0.5, {alpha:0});
-		var scene = new ScrollMagic.Scene({riggerElement: "#item0",duration: "50%", triggerHook: 0})
-    					.setTween(tween)
-    					.addTo(controller);
+		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
+						.setTween(tween)
+						.addTo(controller);
 
     	var tween = TweenMax.to("#title", 0.5, {alpha:1});
 		var scene = new ScrollMagic.Scene({triggerElement: "#item1", duration: "50%", triggerHook:0.5})
@@ -62,6 +62,7 @@ $(document).ready(function() {
 		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
 						.setTween(tween)
 						.addTo(controller);
+
 		var tween = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"UX/UI"});
 		var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0})
 						.setTween(tween)
@@ -69,7 +70,6 @@ $(document).ready(function() {
 	}
 
 	
-
 	var tween = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"SafeLand"});
 	var scene = new ScrollMagic.Scene({triggerElement: "#item2", duration: "50%", triggerHook:0.5})
 						.setTween(tween)
@@ -89,8 +89,7 @@ $(document).ready(function() {
 						.addTo(controller);
 
 	
-
-	/*var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0.5})
+	var scene = new ScrollMagic.Scene({triggerElement: "#item0", duration: "50%", triggerHook:0.5})
 					.on("enter", function () {
 						animateElem2.innerHTML = "";
 					})
@@ -98,26 +97,26 @@ $(document).ready(function() {
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#item1", duration: "50%", triggerHook:0.5})
 					.on("enter", function () {
-						animateElem2.classList.add('animate__animated', 'animate__fadeIn');
+						//animateElem2.classList.add('animate__animated', 'animate__fadeIn');
 						animateElem2.innerHTML = "01";
 					})
 					.addTo(controller);
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#item2", duration: "50%", triggerHook:0.5})
 					.on("enter", function () {
-						animateElem.innerHTML = "SafeLand";
+						//animateElem.innerHTML = "SafeLand";
 						animateElem2.innerHTML = "02";
-						animateElem3.innerHTML = "UX/UI";
+						//animateElem3.innerHTML = "UX/UI";
 					})
 					.addTo(controller);
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#item3", duration: "50%", triggerHook:0.5})
 					.on("enter", function () {
 						animateElem2.innerHTML = "03";
-						animateElem.innerHTML = "Low-Poly<br>Treasure Island";
-						animateElem3.innerHTML = "3D Modelling"
+						//animateElem.innerHTML = "Low-Poly<br>Treasure Island";
+						//animateElem3.innerHTML = "3D Modelling"
 					})
-					.addTo(controller);*/
+					.addTo(controller);
 
 
 });
