@@ -31,7 +31,8 @@ if (isMobile) {
 	var tween = TweenMax.to("#title", 0.5, {alpha:1});
 	var tween2 = TweenMax.to("#project-title", 0.5, {alpha:1, innerHTML:"Apple Music<br>Redesign"});
 	var tween3 = TweenMax.to("#project-type", 0.5, {alpha:1, innerHTML:"UX/UI"});
-	timeline.add(tween,0).add(tween2,0).add(tween3,0);
+	var tween4 = TweenMax.to("#project-number", 0.5, {alpha:1, innerHTML:"&nbsp01",immediateRender:true});
+	timeline.add(tween,0).add(tween2,0).add(tween3,0).add(tween4,0);
 	var scene = new ScrollMagic.Scene({triggerElement: "#item1", duration: "50%", triggerHook:0.5})
 					.setTween(timeline)
 					.addTo(controller);
