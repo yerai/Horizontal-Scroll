@@ -44,8 +44,6 @@ html,body{
 		}
 
 	.project-list{
-		white-space: nowrap; 
-		position: relative;
 	    overflow-x: auto;
 	    overflow-y: hidden;
 	    -webkit-overflow-scrolling: touch;
@@ -55,21 +53,25 @@ html,body{
 			float: none;
 		    display: inline-block;
 		    height: 50vh;
-		    margin-right: 5vw;
 		}
 
 		.project-image{
 			height: 100%;
+			margin-right: 5vw;
 		}
 
 		.first{
 			height: 1%; 
-			width: 50vw; 
-			margin-right:0;
+			width: 1%;
+			margin-right: 51vw;
 		}
 
 
-@media only screen and (max-width: 600px) {
- 	.column_1{width: 0;};
-
+@media screen and (max-width: 600px) {
+	.column_1{ width: 0; }
+	.column_2{ margin-left: 5vw; }
+		.category{font-size: 5vw; }
+		.project-list{ margin-left: -5vw; }
+		.project{ height: 27vh; }
+		.first{ margin-right: 5vw; }
 }
