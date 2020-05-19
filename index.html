@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <!-- SEO --> 
+  <title>Yerai | Portfolio</title>
+  <meta name="description" content="Human Computer Interaction and Design student most interested in User Experience and Interaction.">
   <!-- Meta Tags -->
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Title --> 
-	<title>Yerai</title>
 	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
 	<!-- Boostrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
 	<div class="d-flex flex-row h-100">
-  		<img class="align-self-end column_1" src="./img/me.png" >
+  		<img class="align-self-end column_1" src="./images/me.png" >
   		<div class="d-flex flex-column align-self-center flex-fill column_2">
 
   			<div class="name">YERAI</div>
@@ -28,20 +32,27 @@
 
         <div id="project-list" class="d-flex flex-row project-list">
           <div class="project first"></div>
-          <div id="apple-music" class="project">
-            <img class="project-image" src="./img/apple-music.jpg">
-          </div>
+          <a href="./projects/apple-music/apple-music.html"><div id="apple-music" class="project">
+            <img class="project-image" src="./images/apple-music.jpg">
+          </div></a>
           <div id="safe-land" class="project">
-            <img class="project-image" class="project-image"src="./img/safe-land.jpg">
+            <img class="project-image" class="project-image"src="./images/safe-land.jpg">
           </div>
           <div id="low-poly" class="project">
-            <img class="project-image" src="./img/low-poly.jpg">
+            <img class="project-image" src="./images/low-poly.jpg">
           </div>
         </div>
-
-
   		</div>
 	</div>
+  <div class="social-media">
+      <div class="d-flex flex-row">
+        <a href="mailto:yeerizg@gmail.com"><div class="category logo">EMAIL</div></a>
+        <a href="http://www.linkedin.com/in/yeraizamorano" target="_blank"><div class="category logo">LINKEDIN</div></a>
+        <a href="https://www.behance.net/yerai" target="_blank"><div class="category logo">BEHANCE</div></a>
+        <a href="https://github.com/yerai" target="_blank"><div class="category logo">GITHUB</div></a>
+        <a href="./Resume.pdf" target="_blank"><div class="category logo">RESUME</div></a>
+      </div>
+  </div>
 
 	<!-- JQuery -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -50,6 +61,6 @@
 	<!-- Horizontal -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
 	<!-- Script -->
-	<script  src="./script.js"></script>
+	<script  src="./js/script.js"></script>
 </body>
 </html>
