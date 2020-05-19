@@ -15,7 +15,7 @@ var categories = ["category1","category2","category3","category4"];
 var all = ["apple-music","safe-land","low-poly"];
 var featured = ["apple-music","safe-land","low-poly"];
 var ux = ["apple-music","safe-land"];
-var interaction = [];
+var interaction = ["climbing-lights"];
 var d = ["low-poly"];
 
 // Functions 
