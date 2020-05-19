@@ -89,4 +89,5 @@ html,body{
 		.project-list{ margin-left: -5vw; }
 		.project{ height: 27vh; }
 		.first{ margin-right: 5vw; }
+	.logo{ font-size: 4vw; }
 }
