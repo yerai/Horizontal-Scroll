@@ -12,7 +12,7 @@ window.onload = function() {
 var categories = ["category1","category2","category3","category4"];
 
 // Projects
-var all = ["apple-music","safe-land","low-poly"];
+var all = ["apple-music","safe-land","low-poly", "climbing-lights"];
 var featured = ["apple-music","safe-land","low-poly"];
 var ux = ["apple-music","safe-land"];
 var interaction = ["climbing-lights"];
